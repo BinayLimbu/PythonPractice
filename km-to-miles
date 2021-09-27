@@ -1,0 +1,8 @@
+print("This program converts kilometres to miles.")
+
+km = float(input("Please enter the number in kilometres: ") )
+miles = km/1.609344
+#float(input"")) changes whatever user types into float numbers for calculations
+
+print(km, "km =", round(miles,4), "miles." )
+#round(x,y) function usfeul for rounding variable x to y figures

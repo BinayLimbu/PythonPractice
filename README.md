@@ -1,1 +1,1 @@
-# Just a repository of calculator functions programmed on python
+# Just a repository of calculating functions programmed on python

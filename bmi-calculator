@@ -1,0 +1,21 @@
+print("This program calculates your BMI and classification.")
+
+weight = float(input("Please enter your weight in kg: "))
+height = float(input("Please enter your height in m: "))
+
+print("Weight: ", weight,'kg')
+print("Height: ", height,'m')
+
+bmi = round((weight/ (height * height)),2)
+#just following the basic formula for calculating BMI
+
+if bmi <= 18.5:
+    print("Your BMI value is", bmi, '. You are classed as Underweight.')
+elif bmi > 18.5 and bmi <= 24.9:
+    print("Your BMI value is", bmi, '. You are classed as Normal weight.')
+elif bmi > 24.9 and bmi <= 29.9:
+    print("Your BMI value is", bmi, '. You are classed as Overweight.')
+else:
+    print("Your BMI value is", bmi, '. You are classed as Obese.')
+#conditionals is tricky but makes sense
+

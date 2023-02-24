@@ -1,1 +1,1 @@
-# Just a repository of calculating functions programmed on python following a udemy course
+# Just a repository of training assessments programmed on python from various udemy courses

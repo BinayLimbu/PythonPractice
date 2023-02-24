@@ -1,0 +1,29 @@
+print("This program calculates a true love score based on the name of you and the other person")
+
+name1 = input("Your name: ").lower()
+name2 = input("Their name: ").lower()
+names = name1+name2
+tscore = 0
+lscore = 0
+#love score based on number of instances of "truelove" characters in both names
+
+tscore += names.count("t")
+tscore += names.count("r")
+tscore += names.count("u")
+tscore += names.count("e")
+
+lscore += names.count("l")
+lscore += names.count("o")
+lscore += names.count("v")
+lscore += names.count("e")
+
+score = str(tscore)+str(lscore)
+score = int(score)
+#love score based on a concatenation of "true" instances and "love" instances
+
+if score < 10 or score > 90:
+    print(f"Your love score is {score}, you go together like coke and mentos.")
+elif score >= 40 and score <= 50:
+    print(f"Your love score is {score}, you are alright together.")
+else:
+    print(f"Your love score is {score}.")

@@ -25,15 +25,17 @@ scissors = '''
 ---.__(___)
 '''
 
-#Write your code below this line 👇
 import random
 move = [rock, paper, scissors]
 ai_move = random.randint(0,2)
 choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, 2 for Scissors. "))
-print("You chose:")
-print(move[choice])
-print("The computer chose:")
-print(move[ai_move])
+if choice > 2 or choice < 0:
+  print("You typed an invalid number, you lose. Try again.")
+else:
+  print("You chose:")
+  print(move[choice])
+  print("The computer chose:")
+  print(move[ai_move])
 
 if choice == 0:
   if ai_move == 0:

@@ -23,12 +23,20 @@ operations = {
   "/": divide,
 }
 
+keep_going = True
 num1 = int(input("What is the first number?: "))
 for op in operations:
   print(op)
-symbol = input("Pick an operation from the line above: ")
-calculation = operations[symbol]
-num2 = int(input("What is the second number?: "))
-answer = calculation(num1, num2)
 
-print(f"{num1} {symbol} {num2} = {answer}")
+while keep_going:
+  symbol = input("Pick an operation: ")
+  calculation = operations[symbol]
+  num2 = int(input("What is the next number?: "))
+  answer = calculation(num1, num2)
+  print(f"{num1} {symbol} {num2} = {answer}")
+  again = input("Do you wish to continue calculation? Type 'y' for Yes, 'n' for No: ")
+  if again == 'y':
+    num1 = answer
+  if again == 'n':
+    keep_going = False
+    print("The calculator has terminated.")
